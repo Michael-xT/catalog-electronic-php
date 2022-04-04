@@ -1,0 +1,41 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.*)$ index.php?page=$1 [QSA,L]
+
+<files *.js.gz>
+	AddType "text/javascript" .gz
+	AddEncoding gzip .gz
+</files>
+<files *.css.gz>
+	AddType "text/css" .gz
+	AddEncoding gzip .gz
+</files>
+
+ReWriteCond %{HTTP:accept-encoding} gzip
+RewriteCond %{HTTP_USER_AGENT} !Safari
+
+ReWriteCond %{REQUEST_FILENAME} !^.+.gz$
+
+RewriteCond %{REQUEST_FILENAME}.gz -f
+
+RewriteRule ^(.+) $1.gz [QSA,L]
+
+<IfModule mod_headers.c>
+	<FilesMatch "\.(js|css|xml|gz)$">
+		Header append Vary: Accept-Encoding
+	</FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive On 
+
+	ExpiresDefault "access plus 1 week"
+</IfModule>
+
+
+
+Options -Indexes
