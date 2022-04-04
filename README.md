@@ -20,7 +20,7 @@ Acest proiect este disponibil și pentru Live Preview la adresa:
 https://catalog.suntstudent.ro/
 > Username: **admin** | Parola: **test**
 
-Chiar dacă implicit sistemul este realizat cu scopul de a salva date despre conectări **( IP, timestamp )**, această funcție este **dezactivată** pe site-ul publicat mai sus.
+Chiar dacă implicit sistemul este realizat astfel încât acesta salva date despre conectări **( IP, timestamp )**, această funcție este **dezactivată** pe site-ul publicat mai sus.
 
 ## Preview:
 ![Demo](https://raw.githubusercontent.com/Michael-xT/catalog-electronic-php/main/.github/assets/Demo.gif)
