@@ -13,7 +13,7 @@ Panoul includea funcții precum:
 - Actualizări ( adăugare & ștergere în baza de date )
 - Note & Absențe ( adăugare & ștergere în baza de date + motivare absențe și alte funcții similare )
 
-Acest panou era gândit la acel timp pentru administrarea de către **diriginte** din moment ce legea impunea consemnarea acestor date în mod obligatoriu în catalogul fizic , obstacol cumulat cu refuzul unor profesori de a participa activ în procesul de dezvoltare. Ulterior, doi ani mai târziu a fost făcută tranziția pe sistemul AdServio.
+Acest panou era gândit la acel timp pentru administrarea de către **diriginte** din moment ce legea impunea consemnarea acestor date în mod obligatoriu în catalogul fizic, obstacol cumulat cu refuzul unor profesori de a participa activ în procesul de dezvoltare.
 
 ## Demo
 Acest proiect este disponibil și pentru Live Preview la adresa: 
